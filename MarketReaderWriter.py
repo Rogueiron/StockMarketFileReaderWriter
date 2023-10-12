@@ -7,7 +7,7 @@ try:
         overridename = input("Who would you like to override:")
         linename = fileagain.readline().rstrip('\n')
         while (overridename != linename):
-            if(linename == ""):
+            if(linename == " "):
                 print("Couldn't find name")
             if (overridename == linename.split()[0]):
                 file = open("Market.txt", "w")
